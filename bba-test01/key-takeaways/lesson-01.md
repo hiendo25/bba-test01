@@ -23,7 +23,7 @@
 
 ### Cấu hình thông tin người dùng
 - Config username: git config --global user.name "Hien"  
-- Config email: git config --global user.email "dothanhhien2409@gmail.comm"  
+- Config email: git config --global user.email "dothanhhien2409@gmail.com"  
 
 ### Cấu hình branch mặc định
 - git config --global init.defaultBranch main  

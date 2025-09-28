@@ -83,3 +83,4 @@ for (i = 0; i < 30; i++) {
 - i < 30 → điều kiện chạy/dừng.
 
 - i++ → cập nhật sau mỗi vòng lặp.
+
