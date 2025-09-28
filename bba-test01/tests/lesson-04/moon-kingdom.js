@@ -21,13 +21,21 @@ function createCharacters() {
     }
     )
     );
-    console.log(charactersPowerUp);
+    console.log("Power up:", charactersPowerUp);
+    const charactersList = [
+        { name: "do thanh hien", level: 2, health: 3111 },
+        { name: "do thanh dat", level: 2, health: 3000 },
+        { name: "do thanh tung", level: 2, health: 2200 },
+        { name: "do thanh hoa", level: 2, health: 1000 }
+    ];
+    const possibleWinners = charactersList.filter(charactersList => charactersList.health > 1000);
+    console.log("Possible winners:", possibleWinners);
 }
 createCharacters();
 
 /* Sử dụng hàm filter để lọc ra các phần tử có chỉ số health > 1000. Đặt tên
 mảng mới lọc được này là “possibleWinners” */
-function createCharacters() {
+/* function createCharacters() {
     const characters = [
         { name: "do thanh hien", level: 2, health: 3111 },
         { name: "do thanh dat", level: 2, health: 3000 },
@@ -38,6 +46,7 @@ function createCharacters() {
     console.log(possibleWinners);
 }
 createCharacters();
+*/
 
 // Bài 2
 
@@ -48,9 +57,9 @@ const players = [
     { name: "Yoshi", score: 800 },
     { name: "Phong", score: 500 }
 ];
-players.sort((a, b) => b - a);
 // console.log(players);
 function createLeaderBoard(players) {
+    players.sort((a, b) => b - a);
     for (i = 0; i < players.length; i++) {
         if (i + 1 === 1) {
             medal = "🥇"
