@@ -1,7 +1,7 @@
 let pairs = [];
 function findPairDivisibleBy17() {
     for (i = 1; i <= 100; i++) {
-        for (j = 1; j <= 100; j++) {
+        for (j = i + 1; j <= 100; j++) {
             if ((i + j) % 17 === 0) {
                 pairs.push([i, j]);
                 console.log([i, j]);
